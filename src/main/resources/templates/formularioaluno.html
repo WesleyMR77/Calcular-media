@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Formulario Aluno</title>
+</head>
+<body>
+	<h1>Dados Aluno</h1>
+	<form th:object="${aluno}" th:action="@{/dados}">
+		<input type="text" th:field="*{name}">
+		<input type="number" th:field="*{n1}">
+		<input type="number" th:field="*{n2}">
+		<input type="submit" value="Realizar Calculo">
+	</form>
+
+</body>
+</html>
+

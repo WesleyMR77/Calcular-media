@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Formulario Aluno</title>
+</head>
+<body>
+
+		<p th:text="'Nome: ' + ${aluno.name}"></p>
+		<p th:text="'Média: ' + ${(aluno.n1+aluno.n2)/2}"></p>
+		<p th:text="'Status: ' + ${aluno.status}"></p>
+</body>
+</html>
+
